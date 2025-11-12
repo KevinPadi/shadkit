@@ -1,0 +1,35 @@
+{
+  "categories": [
+    {
+      "id": "hero",
+      "name": "Heros",
+      "blocks": [
+        {
+          "id": "hero1",
+          "name": "Hero 1",
+          "path": "/preview/hero1"
+        },
+        {
+          "id": "hero2",
+          "name": "Hero 2",
+          "path": "/preview/hero2"
+        }
+      ]
+    },
+    {
+      "id": "navbar",
+      "name": "Navbars",
+      "blocks": []
+    },
+    {
+      "id": "footer",
+      "name": "Footers",
+      "blocks": []
+    },
+    {
+      "id": "section",
+      "name": "Sections",
+      "blocks": []
+    }
+  ]
+}

@@ -1,7 +1,5 @@
+import { Hero2 } from "@/blocks/hero2";
+
 export default function Blocks() {
-  return (
-    <div>
-      <h1>Blocks Page</h1>
-    </div>
-  );
+  return <Hero2 />;
 }
