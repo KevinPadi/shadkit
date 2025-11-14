@@ -132,7 +132,7 @@ export function BlockPreview({ block }: BlockPreviewProps) {
         </div>
         <TabsContent value="preview">
           <Card className="p-0 overflow-hidden z-10 bg-transparent border-none">
-            <CardContent className="p-0 relative h-[800px]">
+            <CardContent className="p-0 relative h-[700px] md:h-[800px]">
               <div className="absolute border border-muted rounded-xl bg-muted/10 inset-0 right-4 bg-[radial-gradient(#d4d4d4_1px,transparent_1px)] bg-size-[24px_24px] dark:bg-[radial-gradient(#404040_1px,transparent_1px)]"></div>
               <ResizablePanelGroup
                 direction="horizontal"

@@ -23,7 +23,7 @@ const data = {
 
 const Hero1 = () => {
   return (
-    <section className="py-32 px-2 md:px-4 rounded-2xl bg-zinc-100">
+    <section className="py-32 px-2 md:px-4 rounded-2xl bg-zinc-100 dark:bg-neutral-900">
       <div className="container mx-auto">
         <div className="grid items-center gap-8">
           <div className="flex flex-col md:flex-row items-start md:items-center lg:justify-between lg:gap-4">

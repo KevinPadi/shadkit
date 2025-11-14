@@ -16,5 +16,5 @@ export default async function Page({
   const block = blocks[category];
 
   if (!block) return <div className="text-center">Block not found</div>;
-  return <div className="p-6">{block}</div>;
+  return <div className="md:p-4 lg:p-6">{block}</div>;
 }
