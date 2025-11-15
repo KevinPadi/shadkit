@@ -131,12 +131,12 @@ export function BlockPreview({ block }: BlockPreviewProps) {
           </div>
         </div>
         <TabsContent value="preview">
-          <Card className="p-0 overflow-hidden z-10 bg-transparent border-none">
+          <Card className="shadow-none p-0 overflow-hidden z-10 bg-transparent border-none">
             <CardContent className="p-0 relative h-[700px] md:h-[800px]">
               <div className="absolute border border-muted rounded-xl bg-muted/10 inset-0 right-4 bg-[radial-gradient(#d4d4d4_1px,transparent_1px)] bg-size-[24px_24px] dark:bg-[radial-gradient(#404040_1px,transparent_1px)]"></div>
               <ResizablePanelGroup
                 direction="horizontal"
-                className="relative z-10"
+                className="relative z-10 drop-shadow-red-500"
               >
                 <ResizablePanel
                   ref={resizablePanelRef}
@@ -150,14 +150,18 @@ export function BlockPreview({ block }: BlockPreviewProps) {
                   />
                 </ResizablePanel>
                 <ResizableHandle className="relative hidden w-3 bg-transparent p-0 after:absolute after:right-0 after:top-1/2 after:h-8 after:w-1.5 after:-translate-y-1/2 after:-translate-x-px after:rounded-full after:bg-border after:transition-all md:block hover:after:h-10 hover:after:w-2" />
-                <ResizablePanel defaultSize={0} minSize={0} />
+                <ResizablePanel
+                  defaultSize={0}
+                  minSize={0}
+                  className="test shadow-red-500"
+                />
               </ResizablePanelGroup>
             </CardContent>
           </Card>
         </TabsContent>
 
         <TabsContent value="code">
-          <Card className="p-0 z-10 border-none bg-white dark:bg-[#101010] overflow-hidden">
+          <Card className="shadow-none p-0 z-10 border-none bg-white dark:bg-[#101010] overflow-hidden">
             <CardContent className="p-0 relative border rounded-xl h-[800px]">
               <div
                 className="overflow-y-auto rounded-xl p-4 h-full text-xs md:text-base"
