@@ -121,7 +121,7 @@ export function BlockPreview({ block }: BlockPreviewProps) {
                   copyToClipboard(block.code),
                   setHasCopiedText(true)
                 )}
-                variant="outline"
+                variant="default"
                 className="hidden md:flex"
               >
                 Copy Code
