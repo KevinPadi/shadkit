@@ -26,7 +26,7 @@ const data = {
 
 const Navbar4 = () => {
   return (
-    <section>
+    <section className="p-4">
       {/* Desktop */}
       <div className="hidden md:block container mx-auto">
         <nav>

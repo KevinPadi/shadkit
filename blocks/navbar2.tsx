@@ -31,7 +31,7 @@ const data = {
 
 const Navbar2 = () => {
   return (
-    <section>
+    <section className="p-4">
       {/* Desktop */}
       <div className="hidden md:block container mx-auto">
         <nav>
@@ -78,7 +78,6 @@ const Navbar2 = () => {
           </ul>
         </nav>
       </div>
-
       {/* Mobile */}
       <div className="flex md:hidden container mx-auto items-center justify-between p-2">
         <Link href="/">
