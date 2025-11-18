@@ -1,0 +1,102 @@
+{
+  "categories": [
+    {
+      "id": "hero",
+      "name": "Heros",
+      "blocks": [
+        {
+          "id": "hero1",
+          "name": "Hero 1",
+          "path": "/preview/hero1"
+        },
+        {
+          "id": "hero2",
+          "name": "Hero 2",
+          "path": "/preview/hero2"
+        },
+        {
+          "id": "hero3",
+          "name": "Hero 3",
+          "path": "/preview/hero3"
+        },
+        {
+          "id": "hero4",
+          "name": "Hero 4",
+          "path": "/preview/hero4"
+        },
+        {
+          "id": "hero5",
+          "name": "Hero 5",
+          "path": "/preview/hero5"
+        }
+      ]
+    },
+    {
+      "id": "navbar",
+      "name": "Navbars",
+      "blocks": [
+        {
+          "id": "navbar1",
+          "name": "Navbar 1",
+          "path": "/preview/navbar1"
+        },
+        {
+          "id": "navbar2",
+          "name": "Navbar 2",
+          "path": "/preview/navbar2"
+        },
+        {
+          "id": "navbar3",
+          "name": "Navbar 3",
+          "path": "/preview/navbar3"
+        },
+        {
+          "id": "navbar4",
+          "name": "Navbar 4",
+          "path": "/preview/navbar4"
+        },
+        {
+          "id": "navbar5",
+          "name": "Navbar 5",
+          "path": "/preview/navbar5"
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "name": "Footers",
+      "blocks": [
+        {
+          "id": "footer1",
+          "name": "Footer 1",
+          "path": "/preview/footer1"
+        },
+        {
+          "id": "footer2",
+          "name": "Footer 2",
+          "path": "/preview/footer2"
+        },
+        {
+          "id": "footer3",
+          "name": "Footer 3",
+          "path": "/preview/footer3"
+        },
+        {
+          "id": "footer4",
+          "name": "Footer 4",
+          "path": "/preview/footer4"
+        },
+        {
+          "id": "footer5",
+          "name": "Footer 5",
+          "path": "/preview/footer5"
+        }
+      ]
+    },
+    {
+      "id": "section",
+      "name": "Sections",
+      "blocks": []
+    }
+  ]
+}
