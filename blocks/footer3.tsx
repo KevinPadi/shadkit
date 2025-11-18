@@ -10,6 +10,18 @@ import { Separator } from "@/components/ui/separator";
 import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 
+type IconName = keyof typeof icons;
+
+interface Social {
+  href: string;
+  icon: IconName;
+}
+
+interface Link {
+  href: string;
+  text: string;
+}
+
 const icons = {
   Apple: AppleIcon,
   Google: GoogleIcon,
@@ -18,7 +30,14 @@ const icons = {
   LinkedIn: LinkedInIcon,
 };
 
-const data = {
+const data: {
+  links: {
+    column1: Link[];
+    column2: Link[];
+    column3: Link[];
+  };
+  socials: Social[];
+} = {
   links: {
     column1: [
       {
@@ -152,7 +171,7 @@ const Footer3 = () => {
               ))}
             </div>
             <div className="flex flex-col w-full md:w-32">
-              <h3 className="">Resources</h3>
+              <h3 className="">Socials</h3>
               {data.socials.map((social) => {
                 const Icon = icons[social.icon];
 

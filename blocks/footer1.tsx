@@ -7,7 +7,13 @@ import FacebookIcon from "@/components/icons/Facebook";
 import XIcon from "@/components/icons/X";
 import LinkedInIcon from "@/components/icons/LinkedIn";
 import { Separator } from "@/components/ui/separator";
-import { JSX } from "react/jsx-dev-runtime";
+
+type IconName = keyof typeof icons;
+
+interface Social {
+  href: string;
+  icon: IconName;
+}
 
 const icons = {
   Apple: AppleIcon,
@@ -17,7 +23,10 @@ const icons = {
   LinkedIn: LinkedInIcon,
 };
 
-const data = {
+const data: {
+  links: { href: string; text: string }[];
+  socials: Social[];
+} = {
   links: [
     {
       href: "/",
