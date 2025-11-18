@@ -1,15 +1,21 @@
-import { Hero1 } from "@/blocks/hero1";
-import { Hero2 } from "@/blocks/hero2";
-import { Hero3 } from "@/blocks/hero3";
-import { Hero4 } from "@/blocks/hero4";
-import { Hero5 } from "@/blocks/hero5";
+import dynamic from "next/dynamic";
 
-const blocks = {
-  hero1: <Hero1 />,
-  hero2: <Hero2 />,
-  hero3: <Hero3 />,
-  hero4: <Hero4 />,
-  hero5: <Hero5 />,
+const componentMap = {
+  hero1: dynamic(() => import("@/blocks/hero1").then((mod) => mod.Hero1)),
+  hero2: dynamic(() => import("@/blocks/hero2").then((mod) => mod.Hero2)),
+  hero3: dynamic(() => import("@/blocks/hero3").then((mod) => mod.Hero3)),
+  hero4: dynamic(() => import("@/blocks/hero4").then((mod) => mod.Hero4)),
+  hero5: dynamic(() => import("@/blocks/hero5").then((mod) => mod.Hero5)),
+  navbar1: dynamic(() => import("@/blocks/navbar1").then((mod) => mod.Navbar1)),
+  navbar2: dynamic(() => import("@/blocks/navbar2").then((mod) => mod.Navbar2)),
+  navbar3: dynamic(() => import("@/blocks/navbar3").then((mod) => mod.Navbar3)),
+  navbar4: dynamic(() => import("@/blocks/navbar4").then((mod) => mod.Navbar4)),
+  navbar5: dynamic(() => import("@/blocks/navbar5").then((mod) => mod.Navbar5)),
+  footer1: dynamic(() => import("@/blocks/footer1").then((mod) => mod.Footer1)),
+  footer2: dynamic(() => import("@/blocks/footer2").then((mod) => mod.Footer2)),
+  footer3: dynamic(() => import("@/blocks/footer3").then((mod) => mod.Footer3)),
+  footer4: dynamic(() => import("@/blocks/footer4").then((mod) => mod.Footer4)),
+  footer5: dynamic(() => import("@/blocks/footer5").then((mod) => mod.Footer5)),
 };
 
 export default async function Page({
@@ -18,9 +24,13 @@ export default async function Page({
   params: Promise<{ category: string }>;
 }) {
   const { category } = await params;
+  const Component = componentMap[category as keyof typeof componentMap];
 
-  const block = blocks[category];
+  if (!Component) return <div>Block not found</div>;
 
-  if (!block) return <div className="text-center">Block not found</div>;
-  return <div className="md:p-4 lg:p-6">{block}</div>;
+  return (
+    <div>
+      <Component />
+    </div>
+  );
 }
