@@ -15,6 +15,18 @@ import {
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 
+type IconName = keyof typeof icons;
+
+interface Social {
+  href: string;
+  icon: IconName;
+}
+
+interface Link {
+  href: string;
+  text: string;
+}
+
 const icons = {
   Apple: AppleIcon,
   Google: GoogleIcon,
@@ -23,7 +35,16 @@ const icons = {
   LinkedIn: LinkedInIcon,
 };
 
-const data = {
+const data: {
+  links: {
+    column1: Link[];
+    column2: Link[];
+    column3: Link[];
+    column4: Link[];
+    column5: Link[];
+  };
+  socials: Social[];
+} = {
   links: {
     column1: [
       {
