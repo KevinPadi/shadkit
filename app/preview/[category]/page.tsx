@@ -16,6 +16,21 @@ const componentMap = {
   footer3: dynamic(() => import("@/blocks/footer3").then((mod) => mod.Footer3)),
   footer4: dynamic(() => import("@/blocks/footer4").then((mod) => mod.Footer4)),
   footer5: dynamic(() => import("@/blocks/footer5").then((mod) => mod.Footer5)),
+  pricing1: dynamic(() =>
+    import("@/blocks/pricing1").then((mod) => mod.Pricing1)
+  ),
+  pricing2: dynamic(() =>
+    import("@/blocks/pricing2").then((mod) => mod.Pricing2)
+  ),
+  pricing3: dynamic(() =>
+    import("@/blocks/pricing3").then((mod) => mod.Pricing3)
+  ),
+  pricing4: dynamic(() =>
+    import("@/blocks/pricing4").then((mod) => mod.Pricing4)
+  ),
+  pricing5: dynamic(() =>
+    import("@/blocks/pricing5").then((mod) => mod.Pricing5)
+  ),
 };
 
 export default async function Page({

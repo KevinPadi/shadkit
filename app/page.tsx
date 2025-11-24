@@ -18,10 +18,10 @@ export default function Home() {
             responsive, accessible, and easy to drop into your project.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
           {categories.map((category) => (
             <Link
-              className="p-4 bg-neutral-200 dark:bg-neutral-900/30 border border-black/7 dark:border-white/7 rounded-[26px] hover:bg-neutral-300 dark:hover:bg-neutral-900/40 hover:border-black/15 dark:hover:border-white/15 transition duration-300 group"
+              className="p-2 bg-neutral-200 dark:bg-neutral-900/30 border border-black/7 dark:border-white/7 rounded-2xl hover:bg-neutral-300 dark:hover:bg-neutral-900/40 hover:border-black/15 dark:hover:border-white/15 transition duration-300 group"
               key={category}
               href={`/blocks/${category}`}
             >
@@ -41,8 +41,8 @@ export default function Home() {
               </div>
             </Link>
           ))}
-          <div className="col-span-full text-center">
-            <span className="text-lg text-muted-foreground">
+          <div className="col-span-full text-center mt-10">
+            <span className="text-xl text-muted-foreground">
               More blocks coming soon
             </span>
           </div>
