@@ -1,1 +1,1 @@
-export const categories = ["navbar", "hero", "footer"];
+export const categories = ["navbar", "hero", "footer", "pricing"];

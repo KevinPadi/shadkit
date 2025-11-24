@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <header className="fixed max-w-md w-[calc(100%-32px)] top-4 left-1/2 -translate-x-1/2 flex items-center justify-between p-2 rounded-xl bg-zinc-200 dark:bg-zinc-950 border border-black/8 dark:border-white/8">
+    <header className="fixed max-w-md w-[calc(100%-32px)] top-4 left-1/2 -translate-x-1/2 flex items-center justify-between p-2 rounded-xl bg-background/50 backdrop-blur border border-border z-9999">
       <Link href="/">
         <Button variant={"ghost"} className="text-md px-2">
           ShadKit

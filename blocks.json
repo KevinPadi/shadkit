@@ -94,9 +94,35 @@
       ]
     },
     {
-      "id": "section",
-      "name": "Sections",
-      "blocks": []
+      "id": "pricing",
+      "name": "Pricing",
+      "blocks": [
+        {
+          "id": "pricing1",
+          "name": "Pricing 1",
+          "path": "/preview/pricing1"
+        },
+        {
+          "id": "pricing2",
+          "name": "Pricing 2",
+          "path": "/preview/pricing2"
+        },
+        {
+          "id": "pricing3",
+          "name": "Pricing 3",
+          "path": "/preview/pricing3"
+        },
+        {
+          "id": "pricing4",
+          "name": "Pricing 4",
+          "path": "/preview/pricing4"
+        },
+        {
+          "id": "pricing5",
+          "name": "Pricing 5",
+          "path": "/preview/pricing5"
+        }
+      ]
     }
   ]
 }
