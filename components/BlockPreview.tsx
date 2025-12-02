@@ -70,7 +70,7 @@ export function BlockPreview({ block }: BlockPreviewProps) {
               <TabsTrigger value="code">Code</TabsTrigger>
             </TabsList>
             <Separator orientation="vertical" />
-            <span>{block.name}</span>
+            <span className="font-medium">{block.name}</span>
           </div>
           <div className="hidden md:flex items-center gap-4 py-2 h-10">
             <ButtonGroup className="">
@@ -118,8 +118,7 @@ export function BlockPreview({ block }: BlockPreviewProps) {
               <Button
                 disabled={hasCopiedText}
                 onClick={() => (
-                  copyToClipboard(block.code),
-                  setHasCopiedText(true)
+                  copyToClipboard(block.code), setHasCopiedText(true)
                 )}
                 variant="default"
                 className="hidden md:flex"
@@ -172,8 +171,7 @@ export function BlockPreview({ block }: BlockPreviewProps) {
                 <Button
                   disabled={hasCopiedText}
                   onClick={() => (
-                    copyToClipboard(block.code),
-                    setHasCopiedText(true)
+                    copyToClipboard(block.code), setHasCopiedText(true)
                   )}
                   variant="outline"
                   size="icon-sm"
