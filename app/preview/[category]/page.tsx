@@ -31,6 +31,21 @@ const componentMap = {
   pricing5: dynamic(() =>
     import("@/blocks/pricing5").then((mod) => mod.Pricing5)
   ),
+  feature1: dynamic(() =>
+    import("@/blocks/feature1").then((mod) => mod.Feature1)
+  ),
+  feature2: dynamic(() =>
+    import("@/blocks/feature2").then((mod) => mod.Feature2)
+  ),
+  feature3: dynamic(() =>
+    import("@/blocks/feature3").then((mod) => mod.Feature3)
+  ),
+  feature4: dynamic(() =>
+    import("@/blocks/feature4").then((mod) => mod.Feature4)
+  ),
+  feature5: dynamic(() =>
+    import("@/blocks/feature5").then((mod) => mod.Feature5)
+  ),
 };
 
 export default async function Page({
