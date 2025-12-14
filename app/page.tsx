@@ -12,10 +12,9 @@ export default function Home() {
           <h1 className="max-w-xs md:max-w-full text-3xl md:text-6xl font-medium tracking-tight text-primary text-balance">
             Build your site faster with ready-to-use blocks
           </h1>
-          <p className="max-w-md md:max-w-xl md:text-lg text-muted-foreground text-tight leading-snug">
+          <p className="max-w-md md:max-w-xl md:text-xl text-muted-foreground text-tight leading-snug text-balance">
             A curated collection of modern, copy-paste components for Shadcn UI
-            and Tailwind CSS. From heroes to dashboards, each block is
-            responsive, accessible, and easy to drop into your project.
+            and Tailwind CSS.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
