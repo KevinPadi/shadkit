@@ -13,7 +13,7 @@ export default function Home() {
             Build your site faster with ready-to-use blocks
           </h1>
           <p className="max-w-md md:max-w-xl md:text-xl text-muted-foreground text-tight leading-snug text-balance">
-            A curated collection of modern, copy-paste components for Shadcn UI
+            A curated collection of modern, copy-paste components for shadcn/ui
             and Tailwind CSS.
           </p>
         </div>
