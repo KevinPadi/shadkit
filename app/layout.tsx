@@ -16,7 +16,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ShadKit",
   description:
-    "A curated collection of modern, copy-paste components for Shadcn UI and Tailwind CSS. From heroes to dashboards, each block is responsive, accessible, and easy to drop into your project.",
+    "A curated collection of modern, copy-paste components for Shadcn UI and Tailwind CSS.",
+  openGraph: {
+    type: "website",
+    title: "Shadkit | Build your site faster with ready-to-use blocks",
+    description:
+      "A curated collection of modern, copy-paste components for Shadcn UI and Tailwind CSS.",
+    url: "https://shadkit.vercel.app",
+    images: [
+      {
+        url: "/open_graph.webp",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
