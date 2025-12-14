@@ -14,14 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ShadKit",
+  title: "Shadkit | Build your site faster with ready-to-use blocks",
   description:
-    "A curated collection of modern, copy-paste components for Shadcn UI and Tailwind CSS.",
+    "A curated collection of modern, copy-paste components for shadcn/ui and Tailwind CSS.",
   openGraph: {
     type: "website",
     title: "Shadkit | Build your site faster with ready-to-use blocks",
     description:
-      "A curated collection of modern, copy-paste components for Shadcn UI and Tailwind CSS.",
+      "A curated collection of modern, copy-paste components for shadcn/ui and Tailwind CSS.",
     url: "https://shadkit.vercel.app",
     images: [
       {
