@@ -154,6 +154,37 @@
           "path": "/preview/feature5"
         }
       ]
+    },
+    {
+      "id": "logos",
+      "name": "Logos",
+      "blocks": [
+        {
+          "id": "logos1",
+          "name": "Logos 1",
+          "path": "/preview/logos1"
+        },
+        {
+          "id": "logos2",
+          "name": "Logos 2",
+          "path": "/preview/logos2"
+        },
+        {
+          "id": "logos3",
+          "name": "Logos 3",
+          "path": "/preview/logos3"
+        },
+        {
+          "id": "logos4",
+          "name": "Logos 4",
+          "path": "/preview/logos4"
+        },
+        {
+          "id": "logos5",
+          "name": "Logos 5",
+          "path": "/preview/logos5"
+        }
+      ]
     }
   ]
 }

@@ -46,6 +46,11 @@ const componentMap = {
   feature5: dynamic(() =>
     import("@/blocks/feature5").then((mod) => mod.Feature5)
   ),
+  logos1: dynamic(() => import("@/blocks/logos1").then((mod) => mod.Logos1)),
+  logos2: dynamic(() => import("@/blocks/logos2").then((mod) => mod.Logos2)),
+  logos3: dynamic(() => import("@/blocks/logos3").then((mod) => mod.Logos3)),
+  logos4: dynamic(() => import("@/blocks/logos4").then((mod) => mod.Logos4)),
+  logos5: dynamic(() => import("@/blocks/logos5").then((mod) => mod.Logos5)),
 };
 
 export default async function Page({
